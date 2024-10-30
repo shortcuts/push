@@ -1,10 +1,10 @@
-import { ingestionClient } from "@algolia/ingestion";
+import { algoliasearch } from "algoliasearch";
 
 async function main() {
     // 1. do the setup on the algolia dashboard
 
     // 2. setup the ingestion client to push records
-    const client = ingestionClient('YOUR_APP_ID', 'YOUR_API_KEY', 'eu');
+    const client = algoliasearch('YOUR_APP_ID', 'YOUR_API_KEY').initIngestion({ region: 'eu' });
 
     const response = await client.pushTask({
         // the taskID provided by the dashboard at the end of the setup flow: this will allow our service to automatically fetch the transformation(s), destination.

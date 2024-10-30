@@ -1,13 +1,18 @@
 {
   "name": "push",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
   "type": "module",
-  "license": "MIT",
+  "main": "index.js",
   "scripts": {
-      "start": "node index.js"
+    "start": "tsx $*"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@algolia/ingestion": "1.5.2"
+    "algoliasearch": "5.10.2",
+    "dotenv": "16.4.5",
+    "tsx": "4.19.1"
   }
 }
