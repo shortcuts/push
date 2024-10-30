@@ -9,8 +9,11 @@ git clone https://github.com/shortcuts/push.git
 
 cd push
 
-# if you don't have yarn installed, run: `npm install --global yarn`
-yarn
+# if you don't have yarn installed, run: `npm install --global pnpm`
+pnpm i
+
+# run your .js file
+pnpm start benchmark.js
 ```
 
 ## add your API keys
